@@ -20,13 +20,51 @@
     <meta name="twitter:image" content="https://www.example.com/image.jpg">
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
         main{
             border: solid 2px red;
+            width: 1200px;
+            margin: 0 auto;
         }
         section{
             height: 300px;
             border: solid 3px green;
             background-color: #50c9ee;
+        }
+        /* Aqui é um CLASSE */
+        .container-cards{ 
+            width: 100%;
+            display: flex;
+        
+         }   
+        .card{
+            border: dashed 2px black;
+            background-color: yellow;
+            width: 250px;
+            height: 200px; 
+
+        }
+        .titulo{
+            font-size: 20px;
+            color: #06652e;
+            padding: 10px;
+        }
+        .card-img{
+            width: 200px;
+            height: 150px;
+            margin: 5px auto;
+            border: solid 2px black;
+        
+        }
+        /* Aqui é um ID */
+        #botao-cancelar{
+            width: 300px;
+            background-color: red;
         }
     </style>
 </head>
@@ -34,6 +72,11 @@
 css inline é dentro do elemento "tag"
 css interno/critico é dentro do cabeçalho html
 css externo fora do documento
+
+Selectores
+proprios nome elementos 
+classe prefixo do nome é ponto ex  .card (vários locais)
+id     prefixo do nome é hash  ex  #botao-form (obs. id somente UM dentro do html)
 -->
 <body>
     <header>
@@ -44,9 +87,31 @@ css externo fora do documento
     </header>
     <main>
         <section>
-
+            <div class="container-cards">
+                <div class="card">
+                    <div class="titulo">Cartão 1</div>
+                    <div class="card-img">
+                         <img src="img/cao.jpg" width="200" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="titulo">Cartão  2</div>
+                    <div class="card-img">
+                         <img src="img/dpg.jpg" width="200" alt="">
+                    </div>   
+                </div>
+                <div class="card">
+                    <div class="titulo">Cartão 3</div>
+                    <div class="card-img">
+                         <img src="img/vira.jpg" width="200" alt="" >
+                    </div>
+                </div>
+            </div>
+            <button id="botao-ver">Saiba mais</button>
         </section>
         <section>
+
+        </section> 
 
         </section>
         <section style="height: 400px; background-color: #06652e;">
