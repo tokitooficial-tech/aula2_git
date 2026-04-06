@@ -16,8 +16,26 @@ ul{
   gap:5px;
 }
 a{
-  font-size: 
+  font-size: 18px;
   text-decoration: none;
+}
+.botao-cta{
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px blue;
+    border-radius: 10px 30px 10px 30px;
+    box-shadow: 4px 6px 0px black;
+}
+.botao-cta:hover{
+    background-color: #d1ee50a1;   
+    height: 30px;
+    border: solid 3px orange;
+    border-radius: 10px;
+
+}
+.botao-cta:active{
+    box-shadow: 4px 6px 0px black;
+    
 }
 main{
     border: solid 2px rgb(168, 14, 230);
@@ -46,6 +64,8 @@ section{
     background-color: yellow;
     width: 250px;
     height: auto; 
+    border-radius: 10px 30px 10px 30px;
+    box-shadow: 4px 6px 0px green
 }
 
 .titulo{
@@ -59,12 +79,14 @@ section{
     margin: 5px auto;
     border: solid 2px black;
 }
-.card{
-    width: auto;
+.logo{
+    width: 100px;
     height: auto;
-    margin: 5px auto;
-    border: solid 2px purple
-}    
+    margin: 0px auto;
+    border: solid 2px purple;
+    border-radius: 10px 30px 10px 30px;
+}
+    
 /* Aqui é um ID */
 #botao-cancelar{
     width: 300px;
