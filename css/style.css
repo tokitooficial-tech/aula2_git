@@ -4,6 +4,21 @@
     border: 0;
     box-sizing: border-box;
 }
+.nav-top{ 
+    display: flex; 
+    align-items: center;
+    border:#06652e solid 1px;
+    justify-items: space-around;
+}
+ul{
+  display: flex;
+  list-style: none;
+  gap:5px;
+}
+a{
+  font-size: 
+  text-decoration: none;
+}
 main{
     border: solid 2px rgb(168, 14, 230);
     max-width: 1200px;
@@ -31,8 +46,8 @@ section{
     background-color: yellow;
     width: 250px;
     height: auto; 
-
 }
+
 .titulo{
     font-size: 20px;
     color: #06652e;
@@ -43,8 +58,13 @@ section{
     height: auto;
     margin: 5px auto;
     border: solid 2px black;
-
 }
+.card{
+    width: auto;
+    height: auto;
+    margin: 5px auto;
+    border: solid 2px purple
+}    
 /* Aqui é um ID */
 #botao-cancelar{
     width: 300px;
