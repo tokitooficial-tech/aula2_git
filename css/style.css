@@ -17,7 +17,7 @@ ul{
 }
 a{
   font-size: 18px;
-  text-decoration: none;''
+  text-decoration: none;
 }
 .botao-cta{
     padding: 5px;
@@ -50,11 +50,17 @@ section{
 /* Aqui é um CLASSE */
 .container-cards{ 
     width: 100%; 
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    display: grid; 
+    /*                   três colunas de pixels
+    grid-template-columns: 200px 100px 200px;
+                           três colunas com frações como espaçamento
+    grid-template-columns: 1fr 2fr 1fr;
+                            colunas repetidas por quantidade e tamanhos
+    grid-template-columns: repeat(2, 21fr);
+    */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center; 
 
     }   
 .card{
